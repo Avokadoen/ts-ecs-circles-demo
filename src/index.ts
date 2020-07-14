@@ -43,6 +43,9 @@ fromEvent(window, 'DOMContentLoaded').subscribe(() => {
     return;
   }
 
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
   const ctx = canvas.getContext('2d');
 
   // create entities and attach components to them
@@ -57,7 +60,7 @@ fromEvent(window, 'DOMContentLoaded').subscribe(() => {
   }
   
   // We initially create 50
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 500; i++) {
     createCircleEntity(Math.random() * canvas.width, Math.random() * canvas.height);
   }
 
