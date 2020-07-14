@@ -4,7 +4,7 @@
   "description": "Implementation example of naive-ts-ecs",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --watch-content-base --host akselhj.nb.no",
+    "start": "webpack-dev-server --watch-content-base",
     "build": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "naive-ts-ecs": "file:../ts-ecs",
+    "naive-ts-ecs": "^1.4.0-rc1",
     "rxjs": "^6.5.5"
   }
 }
