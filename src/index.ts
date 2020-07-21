@@ -59,7 +59,7 @@ fromEvent(window, 'DOMContentLoaded').subscribe(() => {
     addComponent<Colored>(manager, entityId, { color: '#'+(Math.random()*0xFFFFFF<<0).toString(16) });
   }
   
-  // We initially create 50
+  // We initially create 500
   for (let i = 0; i < 500; i++) {
     createCircleEntity(Math.random() * canvas.width, Math.random() * canvas.height);
   }
