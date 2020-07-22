@@ -43,8 +43,13 @@ fromEvent(window, 'DOMContentLoaded').subscribe(() => {
     return;
   }
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  const onResize = () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  fromEvent(window, 'resize').subscribe(onResize);
+  onResize();
+
 
   const ctx = canvas.getContext('2d');
 
